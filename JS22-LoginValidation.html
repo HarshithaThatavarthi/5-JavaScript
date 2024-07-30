@@ -1,0 +1,24 @@
+<html>
+   <head>
+    <title>Check Box Validation</title>
+    <script>
+        function check1(){
+            var uname=document.form.username.value;
+            var pass=document.form.password.value;
+            if(uname==null || uname=="") {
+                alert("Username cannot be blank");
+                return false;
+            }else if(pass.length<6){
+            alert("Password cannot be blank");
+            return false;
+           }
+            return true; }
+    </script></head>
+<body>
+    <h2>Login Page</h2>
+    <form name="form" action="Loginsuccess.html" onsubmit="return check1(this)">
+    UserName:<input type="text" name="username"><br>
+    Password:<input type="password" name="password"><br>
+    <input type="submit" value="Submit"> 
+    </form></body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+   <head>
+      <script>
+            function validateForm(){
+               const check=document.getElementsByName("Food") 
+               let checkedbutton=0;
+               //check if any radio button is checked
+               for(let i=0;i<check.length;i++){
+                  if(check[i].checked){
+                     checkedbutton++;
+                  }  }
+               if(checkedbutton===0){
+               alert("Please select one item")
+               return false;
+            }
+            return true; }
+      </script></head><body>
+      <h1>Check Box validation</h1>
+   <form action="Loginsuccess.html" id="radioform" onsubmit="return validateForm()">
+    <input type="checkbox" name="Food"value="icecream">Ice-cream<br>
+    <input type="checkbox" name="Food"value="chocolate">Chocolate<br>
+    <input type="checkbox" name="Food" value="cake">Cake<br>
+    <input type="submit" value="Submit">
+   </form></body></html>

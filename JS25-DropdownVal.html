@@ -1,0 +1,21 @@
+<html>
+   <head>
+      <script>
+            function validateForm(){
+               const drop=document.getElementByName("b");
+               const selected1=drop.value;
+               if(selected1===""){
+               alert("Please select one item")
+               return false;}
+            return true;}
+      </script></head>
+   <body>
+      <h1>Dropdown-List validation</h1>
+   <form action="Loginsuccess.html" onsubmit="return validateForm()">
+ <select name="b">
+   <option value="A">CSE</option>
+    <option value="B">EEE</option>
+    <option value="C">MECH</option>
+    </select><br>
+    <input type="submit" value="Submit">
+   </form></body></html>

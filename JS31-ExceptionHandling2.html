@@ -1,0 +1,28 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            function divide(a,b)
+            {
+                try{
+                if(b===0)
+               {
+                   throw new Error("Divide by Zero is not allowed..");
+               }
+               result=a/b;
+               console.log("Result: ",result);
+               console.log("End...")
+            }
+        catch(error)
+        {
+             console.error("Error: "+error.message);
+        }
+        finally{
+              console.log("Division operation is completed..")
+        }
+    }
+    divide(10,2);
+    divide(10,0);
+        </script>
+    </body>
+    </html>
